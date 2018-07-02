@@ -1,0 +1,13 @@
+<h2>Your Created Projects</h2>
+
+<ul>
+   {{#each projectArrayCreated}}
+    <li>
+        <h3>{{this.projectName}}</h3>
+        <p>{{this.clientName}}</p>
+    </li>
+   {{else}}
+   <p>You don't have any projects yet.</p>
+   <a href="/project/add">Add a Project</a>
+  {{/each}}
+</ul>
